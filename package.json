@@ -1,10 +1,11 @@
 {
-  "name": "exportjs",
+  "name": "export-json",
   "version": "1.0.0",
-  "description": "",
+  "description": "Export Json file by typing easily in input interface",
   "main": "index.js",
   "dependencies": {
     "body-parser": "^1.20.1",
+    "export-json": "^1.0.0",
     "express": "^4.18.2",
     "express-session": "^1.17.3",
     "file-match": "^1.0.2",
@@ -17,10 +18,25 @@
     "start": "cd server && nodemon index.js",
     "build": "webpack --watch"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "export",
+    "json"
+  ],
+  "author": {
+    "name": "Jiyun-park",
+    "email": "jyun1937@naver.com"
+  },
   "license": "ISC",
   "devDependencies": {
     "replace": "^1.2.2"
+  },
+  "homepage": "https://github.com/jiyun-par/export-json-module",
+  "bugs": {
+    "url": "https://github.com/jiyun-par/export-json-module",
+    "email": "jyun1937@naver.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jiyun-par/export-json-module"
   }
 }
