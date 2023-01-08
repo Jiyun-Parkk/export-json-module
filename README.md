@@ -14,13 +14,10 @@ It's module for export JSON file by write in input. You can change colum and lab
 
 ## Install - 설치
 
-You should clone this project and run at the local envrionment.
-
-프로젝트를 clone 하고 로컬환경에서 서버를 열어 사용합니다.
+CEJ로 프로젝트를 생성합니다.
 
 ```bash
-git clone https://github.com/jiyun-par/export-json-module.git
-npm install
+npx create-export-json my-app
 ```
 
 ## Open Server - 서버
