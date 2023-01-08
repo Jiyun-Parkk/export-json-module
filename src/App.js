@@ -2,34 +2,9 @@ import { ClearButton, Form, TabMenu } from './components/index.js'
 
 export default class App {
   constructor($root) {
-    this.nationList = ['kr', 'cn', 'tcn', 'en', 'vn', 'jp']
-    this.contentsList = [
-      [
-        ['KEYWORD', 'sub1'],
-        ['INTERVIEW', 'sub2'],
-        ['TRAVEL', 'sub3'],
-        ['FASHION & BEAUTY', 'sub4'],
-        ['EVENT', 'sub5'],
-        ['SPECIAL ISSUE', 'sub6'],
-      ],
-      [
-        ['KEYWORD', 'sub1'],
-        ['INTERVIEW', 'sub2'],
-        ['K-CLASS', 'sub6'],
-        ['TRAVEL', 'sub3'],
-        ['FASHION & BEAUTY', 'sub4'],
-        ['EVENT', 'sub5'],
-        ['SPECIAL ISSUE', 'sub7'],
-      ],
-    ]
-    this.labelList = [
-      'subNum',
-      'label',
-      'menuTit',
-      'mainTit',
-      'magazine',
-      'subtxt',
-    ]
+    this.nationList = ['menu1', 'menu2', 'menu3']
+    this.contentsList = ['sample1', 'sample2', 'sample3']
+    this.labelList = ['key1', 'key2', 'key3']
 
     //add clearBtn
     const $clearBtn = new ClearButton($root)
@@ -42,7 +17,7 @@ export default class App {
       $root,
       this.nationList,
       this.contentsList,
-      this.labelList
+      this.labelList,
     )
 
     const containerList = document.querySelectorAll('.container-box')

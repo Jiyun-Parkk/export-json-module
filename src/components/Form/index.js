@@ -1,19 +1,19 @@
 import { Container, SubmitButton, InputBox, Title } from '../index.js'
 
 export class Form {
-  constructor($root, nationList, contentsList, labelList) {
+  constructor($root, menuList, contentsList, labelList) {
     this.$form = document.createElement('form')
     this.labelList = labelList
-    this.nationList = nationList
+    this.menuList = menuList
 
     const fileNameInput = new InputBox({
       $root: this.$form,
       tag: 'input',
-      content: '파일이름',
+      content: 'File Name',
       inputName: 'fileName',
     })
 
-    for (const nation of this.nationList) {
+    for (const nation of this.menuList) {
       this.containerBox = document.createElement('div')
       this.containerBox.dataset.nation = nation
       this.containerBox.className = 'container-box'
@@ -46,7 +46,7 @@ export class Form {
     const formData = new FormData(this.$form)
     const enter = new RegExp('\n')
     let list
-    for (const nation of this.nationList) {
+    for (const nation of this.menuList) {
       let chunkList = this.chunk(formData.getAll(nation)).map((cclist) => {
         for (let key in cclist) {
           cclist[key] = cclist[key].replace(/\n/gi, '<br/>')

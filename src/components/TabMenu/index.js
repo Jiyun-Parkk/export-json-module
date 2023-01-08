@@ -1,9 +1,9 @@
 export class TabMenu {
-  constructor($root, nationList) {
+  constructor($root, menuList) {
     this.$tabBox = document.createElement('ul')
     this.$tabBox.className = 'tab-box'
 
-    for (let nation of nationList) {
+    for (let nation of menuList) {
       this.$tabMenu = document.createElement('li')
       this.$tabMenu.dataset.nation = nation
       this.$tabMenu.textContent = nation.toUpperCase()

@@ -29,12 +29,11 @@ ul {
   margin: 0 auto;
   z-index: 20;
   padding: 20px !important;
-  justify-content: space-between;
+  gap: 10px;
   box-shadow: 0px 0px 10px #332b088a;
 }
 li {
   list-style: none;
-  width: 100px;
   padding: 10px 20px;
   font-size: 18px;
   cursor: pointer;
